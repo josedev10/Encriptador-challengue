@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Vector.png" type="image/x-icon">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="encrypt">
+
+            <img src="img/Vector.png" alt="logo Alura" class="logo">
+
+            <textarea name="text" class="text" id="text" cols="30" rows="10" placeholder="aquí puedes escribir..." spellcheck="false" focus=""></textarea>
+
+        
+            <div class="terms">
+
+                <p>solo letras minusculas</p>
+
+            </div>
+            <div class="buttons">
+
+                <button class="encrypt-button" type="button" onclick="encrypt()">Encrypt</button>
+                <input class="decrypt-button" type="button" onclick="decrypt()" value="decrypt">
+
+            </div>
+
+        </div>
+
+       
+        <div class="show-message">
+
+            <img src="img/doll.png" alt="" id="doll" class="doll">
+
+            <div class="message-to-show">
+
+                <h2 id="message-title">Ningún mensaje fue encontrado</h2>
+                <p id="paragraph">Ingresa el texto que deseas encriptar o desencriptar</p>
+
+            </div>
+
+            <textarea name="message" id="message" cols="30" rows="10" class="message" spellcheck="false" readonly="true"></textarea>
+
+            <input class="copy" type="button" onclick="copyMessage()" value="Copy">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
